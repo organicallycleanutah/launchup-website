@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — LaunchUp</title>
+  <meta name="description" content="Web design, SEO, and website care plans for small businesses. See what LaunchUp offers and find the right package for your business."/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .pricing-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      position: relative;
+    }
+    .pricing-card.featured {
+      border-color: var(--sky);
+      border-width: 2px;
+    }
+    .featured-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--sky);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 16px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .pricing-name { font-size: 14px; font-weight: 600; color: var(--mist); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+    .pricing-price { font-size: 48px; font-weight: 700; letter-spacing: -2px; margin-bottom: 4px; }
+    .pricing-price span { font-size: 18px; font-weight: 400; color: var(--mist); vertical-align: top; margin-top: 12px; display: inline-block; }
+    .pricing-period { font-size: 14px; color: var(--mist); margin-bottom: 24px; }
+    .pricing-desc { font-size: 14px; color: var(--mist); margin-bottom: 28px; line-height: 1.6; }
+    .pricing-features { list-style: none; margin-bottom: 32px; }
+    .pricing-features li {
+      font-size: 14px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pricing-features li:last-child { border-bottom: none; }
+    .pricing-features li::before { content: "✓"; color: var(--sky); font-weight: 700; flex-shrink: 0; }
+    .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-top: 48px; position: relative; }
+    .process-step { text-align: center; }
+    .step-number {
+      width: 52px; height: 52px;
+      background: var(--sky-light);
+      color: var(--sky);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+    .process-step h4 { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+    .process-step p { font-size: 14px; color: var(--mist); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">launch<span>up</span></a>
+      <div class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Get Started</a>
+      </div>
+      <div class="nav-mobile-toggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-tag">Services</div>
+      <h1>What we do</h1>
+      <p>Web design, SEO, and ongoing care — everything your business needs to win online.</p>
+    </div>
+  </section>
+
+  <!-- Service Details -->
+  <section>
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Web Design & Development</h3>
+          <p>A custom website built around your business goals — not a recycled template. Clean, fast, and designed to convert.</p>
+          <ul class="service-features">
+            <li>Custom design from scratch</li>
+            <li>Mobile-first & responsive</li>
+            <li>Fast load times (Core Web Vitals optimized)</li>
+            <li>Contact forms & lead capture</li>
+            <li>Google Analytics setup</li>
+            <li>30-day post-launch support</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📈</div>
+          <h3>Search Engine Optimization</h3>
+          <p>Get in front of people who are already searching for what you do — in your city, in your industry.</p>
+          <ul class="service-features">
+            <li>Local SEO & Google Business Profile</li>
+            <li>Keyword research & strategy</li>
+            <li>On-page optimization</li>
+            <li>Technical SEO audit & fixes</li>
+            <li>Link building</li>
+            <li>Monthly performance reports</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Website Care Plans</h3>
+          <p>Your site needs ongoing attention to stay fast, secure, and effective. We handle it so you don't have to.</p>
+          <ul class="service-features">
+            <li>Managed hosting</li>
+            <li>Security monitoring & backups</li>
+            <li>Speed & performance optimization</li>
+            <li>Content updates (up to 2hrs/month)</li>
+            <li>Uptime monitoring</li>
+            <li>Priority support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section style="background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-tag">Pricing</div>
+      <h2 class="section-title">Simple, transparent pricing</h2>
+      <p class="section-desc">No hidden fees. No surprise invoices. Just clear pricing for real results.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-name">Starter</div>
+          <div class="pricing-price"><span>$</span>1,500</div>
+          <div class="pricing-period">one-time</div>
+          <div class="pricing-desc">Perfect for small businesses that need a clean, professional website to get started.</div>
+          <ul class="pricing-features">
+            <li>Up to 5 pages</li>
+            <li>Custom design</li>
+            <li>Mobile responsive</li>
+            <li>Contact form</li>
+            <li>Basic SEO setup</li>
+            <li>30-day support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="pricing-name">Growth</div>
+          <div class="pricing-price"><span>$</span>3,500</div>
+          <div class="pricing-period">one-time + $500/mo SEO</div>
+          <div class="pricing-desc">For businesses ready to dominate local search and turn their website into a lead machine.</div>
+          <ul class="pricing-features">
+            <li>Up to 10 pages</li>
+            <li>Custom design</li>
+            <li>Full SEO strategy</li>
+            <li>Google Business Profile</li>
+            <li>Monthly reporting</li>
+            <li>Care plan included (3 months)</li>
+          </ul>
+          <a href="contact.html" class="btn btn-sky" style="width:100%; justify-content:center;">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-name">Custom</div>
+          <div class="pricing-price" style="font-size:36px;">Let's talk</div>
+          <div class="pricing-period">custom scope</div>
+          <div class="pricing-desc">Have something bigger in mind? E-commerce, complex builds, or ongoing partnerships — let's figure it out.</div>
+          <ul class="pricing-features">
+            <li>Unlimited pages</li>
+            <li>E-commerce ready</li>
+            <li>Custom integrations</li>
+            <li>Dedicated support</li>
+            <li>Flexible retainer options</li>
+            <li>Priority turnaround</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section>
+    <div class="container">
+      <div class="section-tag">Our Process</div>
+      <h2 class="section-title">How it works</h2>
+      <p class="section-desc">From first call to launch — here's exactly what to expect working with us.</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h4>Discovery Call</h4>
+          <p>We learn your business, goals, and what success looks like for you.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h4>Strategy & Proposal</h4>
+          <p>We put together a clear scope, timeline, and investment — no surprises.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h4>Design & Build</h4>
+          <p>We design and build your site with regular check-ins along the way.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h4>Launch & Grow</h4>
+          <p>We launch, optimize, and keep improving so your results compound over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding: 0 0 96px;">
+    <div class="cta-banner">
+      <h2>Not sure what you need?</h2>
+      <p>Book a free 30-minute call and we'll figure it out together.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white">Book a Free Call</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">launch<span>up</span></div>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-copy">© 2025 LaunchUp. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
